@@ -27,7 +27,7 @@ const Document = async ({params : {id}} : SearchParamProps) => {
 			: 'viewer'
 	}))
 
-	const currentUserType = room.usersAccesses[User.emailAddresses[0].emailAddress]?.includes('room:write') ? 'editor' : 'viewer'
+	const currentUserType = room.usersAccesses[clerkUser.emailAddresses[0].emailAddress]?.includes('room:write') ? 'editor' : 'viewer'
 
 	return (
 		<main className='flex w-full flex-col items-center'>
