@@ -13,7 +13,6 @@ import Loader from './Loader'
 import ShareModal from './ShareModal'
 
 const CollaborativeRoom = ({roomId, roomMetadata, users, currentUserType}: CollaborativeRoomProps) => {
-	//const currentUserType = 'editor'
 	
 	const [documentTitle, setDocumentTitle] = useState(roomMetadata.title)
 	const [editing, setEditing] = useState(false)
